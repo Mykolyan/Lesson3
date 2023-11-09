@@ -9,20 +9,42 @@
 //   { id: 3, name: "Orange" },
 // ];
 
+// let result = fruts.map(item => item.name);
+// console.log(result);
+
 //  -- 2 --
 //Виведіть парні числа від 2 до 10, використовуючи цикл for.
+
+// for (let i = 2; i <= 10; i++) {
+//     if (i % 2 === 0) {
+//         alert(i);
+//     }
+// }
 
 //  -- 3 --
 //Замініть цикл "for" на "while"
 // for (let i = 0; i < 5; i++) {
-//     console.lpg( `цифра ${i}!` );
-//   }
+//     console.log( `цифра ${i}!` );
+// }
+  
+// let i = 0;
+// while (i < 5) {
+//     console.log(`цифра ${i}!`);
+//     i++
+// }
 
 //  -- 4 --
 //Напишіть цикл, який пропонує prompt ввести число більше за 100.
 //Якщо відвідувач введе менше число – попросити ввести ще раз, і так далі.
 //Цикл повинен запитувати число доти, доки відвідувач не введе число,
 // більше за 100, або не скасує ввід/введе порожній рядок.
+
+// let num = prompt("Enter number bigger than 100");
+
+// while (num <= 100) {
+//     num = prompt("Please, enter your number again!");
+//     if (!num) break;
+// }
 
 //  -- 5 --
 // Вирахуйте середній вік
@@ -33,3 +55,9 @@
 //   { age: 10, name: "Юля" },
 //   { age: 20, name: "Катя" },
 // ];
+
+// let ageGirls = girls.map(item => item.age);
+// console.log(ageGirls);
+
+// let MiddleAge = ageGirls.reduce((sum, item) => sum + item, 0) / ageGirls.length;
+// console.log(MiddleAge);
